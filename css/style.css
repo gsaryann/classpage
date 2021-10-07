@@ -123,7 +123,7 @@ ul {
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: linear-gradient(var(--deg, 49deg), #a21af0, #ff0072);
+    background: linear-gradient(var(--deg, 49deg), #fc5c7d,#6a82fb);
     color: rgb(255, 255, 255);
     animation: mainanim 7s linear infinite;
 }
