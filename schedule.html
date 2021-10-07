@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule of Lessons</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 style="color: red; text-align: center;">РАСПИСАНИЕ НЕ ПОМЕНЯНО</h1>
+    <div class="cont">
+        <table id='tuesday'>
+            <tr>
+                <th>Время</th>
+                <th>Вторник</th>
+            </tr>
+            <tr>
+                <td>8.00 - 8.30</td>
+                <td>Немецкий язык</td>
+            </tr>
+            <tr>
+                <td>8.40 - 9.20</td>
+                <td>Литература</td>
+            </tr>
+            <tr>
+                <td>9.30 - 10.10</td>
+                <td>Геометрия</td>
+            </tr>
+            <tr>
+                <td>10.30 - 11.10</td>
+                <td>Физическая культура</td>
+            </tr>
+            <tr>
+                <td>11.30 - 12.10</td>
+                <td>Химия</td>
+            </tr>
+            <tr>
+                <td>12.20 - 13.00</td>
+                <td>Английский язык</td>
+            </tr>
+        </table>
+
+        <table id='friday'>
+            <tr>
+                <th>Время</th>
+                <th>Пятница</th>
+            </tr>
+            <tr>
+                <td>8.00 - 8.30</td>
+                <td>Обществознание</td>
+            </tr>
+            <tr>
+                <td>8.40 - 9.20</td>
+                <td>Английский язык</td>
+            </tr>
+            <tr>
+                <td>9.30 - 10.10</td>
+                <td>Биология</td>
+            </tr>
+            <tr>
+                <td>10.30 - 11.10</td>
+                <td>Физика</td>
+            </tr>
+            <tr>
+                <td>11.30 - 12.10</td>
+                <td>Русский язык</td>
+            </tr>
+            <tr>
+                <td>12.20 - 13.00</td>
+                <td>География</td>
+            </tr>
+        </table>
+
+        <table id='thursday'>
+            <tr>
+                <th>Время</th>
+                <th>Четверг</th>
+            </tr>
+            <tr>
+                <td>8.00 - 8.30</td>
+                <td>История</td>
+            </tr>
+            <tr>
+                <td>8.40 - 9.20</td>
+                <td>Литература</td>
+            </tr>
+            <tr>
+                <td>9.30 - 10.10</td>
+                <td>Физическая культура</td>
+            </tr>
+            <tr>
+                <td>10.30 - 11.10</td>
+                <td>География</td>
+            </tr>
+            <tr>
+                <td>11.30 - 12.10</td>
+                <td>Геометрия</td>
+            </tr>
+        </table>
+
+        <table id='monday'>
+            <tr>
+                <th>Время</th>
+                <th>Понедельник</th>
+            </tr>
+            <tr>
+                <td>8.00 - 8.40</td>
+                <td>Литература</td>
+            </tr>
+            <tr>
+                <td>8.40 - 9.20</td>
+                <td>Информатика</td>
+            </tr>
+            <tr>
+                <td>9.30 - 10.10</td>
+                <td>Немецкий язык</td>
+            </tr>
+            <tr>
+                <td>10.30 - 11.10</td>
+                <td>История</td>
+            </tr>
+            <tr>
+                <td>11.30 - 12.10</td>
+                <td>Физика</td>
+            </tr>
+            <tr>
+                <td>12.20 - 13.00</td>
+                <td>Алгебра</td>
+            </tr>
+        </table>
+
+
+        <table id='saturday'>
+            <tr>
+                <th>Время</th>
+                <th>Суббота</th>
+            </tr>
+            <tr>
+                <td>8.00 - 8.40</td>
+                <td>Алгебра</td>
+            </tr>
+            <tr>
+                <td>8.50 - 9.30</td>
+                <td>История</td>
+            </tr>
+            <tr>
+                <td>9.40 - 10.20</td>
+                <td>Технология</td>
+            </tr>
+            <tr>
+                <td>10.30 - 11.10</td>
+                <td>Английский язык</td>
+            </tr>
+            <tr>
+                <td>11.20 - 12.00</td>
+                <td>ОБЖ</td>
+            </tr>
+        </table>
+
+        <table id='wednesday'>
+            <tr>
+                <th>Время</th>
+                <th>Среда</th>
+            </tr>
+            <tr>
+                <td>8.00 - 8.30</td>
+                <td>Русский язык</td>
+            </tr>
+            <tr>
+                <td>8.40 - 9.20</td>
+                <td>Физика</td>
+            </tr>
+            <tr>
+                <td>9.30 - 10.10</td>
+                <td>Литература</td>
+            </tr>
+            <tr>
+                <td>10.30 - 11.10</td>
+                <td>Алгебра</td>
+            </tr>
+            <tr>
+                <td>11.30 - 12.10</td>
+                <td>Биология</td>
+            </tr>
+            <tr>
+                <td>12.20 - 13.00</td>
+                <td>Русский язык</td>
+            </tr>
+            <tr>
+                <td>13.10 - 13.40</td>
+                <td>Химия</td>
+            </tr>
+        </table>
+
+        <script type="text/javascript">
+            function main() {
+                var nowDate = new Date();
+                var d = (nowDate.toLocaleString('ru', {
+                    weekday: 'short'
+                }));
+
+                if (d == 'пн') {
+                    var monday = document.getElementById('monday');
+                    monday.style.display = 'flex';
+                }
+                if (d == 'вт') {
+                    var tuesday = document.getElementById('tuesday');
+                    tuesday.style.display = 'flex';
+                }
+                if (d == 'ср') {
+                    var tuesday = document.getElementById('wednesday');
+                    wednesday.style.display = 'flex';
+                }
+                if (d == 'чт') {
+                    var thursday = document.getElementById('thursday');
+                    thursday.style.display = 'flex';
+                }
+                if (d == 'пт') {
+                    var friday = document.getElementById('friday');
+                    friday.style.display = 'flex';
+                }
+                if (d == 'сб') {
+                    var saturday = document.getElementById('saturday');
+                    saturday.style.display = 'flex';
+                }
+                if (d == 'вс') {
+                    var table = document.getElementById('table');
+                    table.style.display = 'flex';
+                }
+            }
+            window.onload = function() {
+                main();
+            }
+        </script>
+        <table width="100%">
+            <tr>
+                <td><a href="all.html">Расписание на неделю</a></td>
+            </tr>
+        </table>
+    </div>
+    <style>
+        .cont {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #monday {
+            display: none;
+        }
+        
+        #tuesday {
+            display: none;
+        }
+        
+        #wednesday {
+            display: none;
+        }
+        
+        #thursday {
+            display: none;
+        }
+        
+        #friday {
+            display: none;
+        }
+        
+        #saturday {
+            display: none;
+        }
+        
+        #table {
+            display: none;
+        }
+        
+        td {
+            text-align: center;
+            /* Выравниваем текст по центру ячейки */
+            font-size: 35px;
+        }
+    </style>
+
+</body>
+
+</html>

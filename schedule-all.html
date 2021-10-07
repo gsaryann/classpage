@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table role="table">
+        <thead role="rowgroup">
+            <tr role="row">
+                <th role="columnheader">№</th>
+                <th role="columnheader">Время</th>
+                <th role="columnheader">Понедельник</th>
+                <th role="columnheader">Вторник</th>
+                <th role="columnheader">Среда</th>
+                <th role="columnheader">Четверг</th>
+                <th role="columnheader">Пятница</th>
+                <th role="columnheader">Суббота</th>
+            </tr>
+        </thead>
+        <tbody role="rowgroup">
+            <tr role="row">
+                2 08.50-09.30 География 309 Эл.к. "Итог.сочин." 309 Математика 309 Инд. проект 309 3 09.40-10.20 Экономика 309 Английский язык 309 География 309 География 309 Математика 309 Английский язык (д) - 4 10.40-11.20 Экономика 309 Физ. культура с/з Английский
+                язык 309 Русский язык 309 История 309 Физ. культура (д) - 5 11.40-12.20 Эл.к."Осн.комп.алг" 407 Физика 309 История 309 Математика 309 Эл.к. "Пр.право" 309 6 12.40-13.20 Родной язык 309 Физика 309 Математика 309 Математика 309 Литература
+                309 7 13.30-14.10 Литература 309 Математика 309 Астрономия 309 Эл.к."Урав.и нерав." 309
+
+                <td role="cell">1</td>
+                <td role="cell">08.00-08.40</td>
+                <td role="cell">Литература</td>
+                <td role="cell">-</td>
+                <td role="cell">-</td>
+                <td role="cell">Физ. культура</td>
+                <td role="cell">ОБЖ</td>
+                <td role="cell">Инд. проект</td>
+            </tr>
+            <tr role="row">
+                <td role="cell">The</td>
+                <td role="cell">Tick</td>
+                <td role="cell">Crimefighter Sorta</td>
+                <td role="cell">Blue</td>
+                <td role="cell">Wars</td>
+                <td role="cell">John Smith</td>
+                <td role="cell">July 19, 1968</td>
+                <td role="cell">Athens</td>
+            </tr>
+            <tr role="row">
+                <td role="cell">Jokey</td>
+                <td role="cell">Smurf</td>
+                <td role="cell">Giving Exploding Presents</td>
+                <td role="cell">Smurflow</td>
+                <td role="cell">Smurf</td>
+                <td role="cell">Smurflane Smurfmutt</td>
+                <td role="cell">Smurfuary Smurfteenth, 1945</td>
+                <td role="cell">New Smurf City</td>
+
+            </tr>
+            <tr role="row">
+                <td role="cell">Cindy</td>
+                <td role="cell">Beyler</td>
+                <td role="cell">Sales Representative</td>
+                <td role="cell">Red</td>
+                <td role="cell">Wars</td>
+                <td role="cell">Lori Quivey</td>
+                <td role="cell">July 5, 1956</td>
+                <td role="cell">Paris</td>
+
+            </tr>
+            <tr role="row">
+                <td role="cell">Captain</td>
+                <td role="cell">Cool</td>
+                <td role="cell">Tree Crusher</td>
+                <td role="cell">Blue</td>
+                <td role="cell">Wars</td>
+                <td role="cell">Steve 42nd</td>
+                <td role="cell">December 13, 1982</td>
+                <td role="cell">Las Vegas</td>
+
+            </tr>
+        </tbody>
+    </table>
+    <style>
+        /*
+        Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
+        */
+        
+        @media only screen and (max-width: 760px),
+        (min-device-width: 768px) and (max-device-width: 1024px) {
+            /* Force table to not be like tables anymore */
+            table,
+            thead,
+            tbody,
+            th,
+            td,
+            tr {
+                display: block;
+            }
+            /* Hide table headers (but not display: none;, for accessibility) */
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                margin: 0 0 1rem 0;
+            }
+            tr:nth-child(odd) {
+                background: #ccc;
+            }
+            td {
+                /* Behave  like a "row" */
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+            }
+            td:before {
+                /* Now like a table header */
+                position: absolute;
+                /* Top/left values mimic padding */
+                top: 0;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+            }
+            /*
+            Label the data
+        You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+            */
+            td:nth-of-type(1):before {
+                content: "Номер урока";
+            }
+            td:nth-of-type(2):before {
+                content: "Время урока";
+            }
+            td:nth-of-type(3):before {
+                content: "День недели";
+            }
+            td:nth-of-type(4):before {
+                content: "1 урок";
+            }
+            td:nth-of-type(5):before {
+                content: "2 урок";
+            }
+            td:nth-of-type(6):before {
+                content: "3 урок";
+            }
+            td:nth-of-type(7):before {
+                content: "4 урок";
+            }
+            td:nth-of-type(8):before {
+                content: "5 урок";
+            }
+            td:nth-of-type(9):before {
+                content: "6 урок";
+            }
+            td:nth-of-type(10):before {
+                content: "7 урок";
+            }
+        }
+    </style>
+</body>
+
+</html>
