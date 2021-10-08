@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -23,22 +24,27 @@
                     <div class="header__left">
                         <nav class="nav">
                             <ul class="nav__list">
-                                <li class="nav__list-item "><a href="/#about" class="nav__item-link">О нас</a></li>
-                                <li class="nav__list-item"><a href="/news.html" class="nav__item-link">Новости</a></li>
-                                <li class="nav__list-item"><a href="/gallery.html" class="nav__item-link">Галерея</a>
+                                <li class="nav__list-item "><a href="/" class="nav__item-link active hidden">Главная</a>
                                 </li>
-                                <li class="nav__list-item"><a href="/schedule.html" class="nav__item-link">Расписание
+                                <li class="nav__list-item"><a href="/news.html" class="nav__item-link hidden">Новости</a></li>
+                                <li class="nav__list-item"><a href="/gallery.html" class="nav__item-link hidden">Галерея</a>
+                                </li>
+                                <li class="nav__list-item"><a href="/schedule.html" class="nav__item-link hidden">Расписание
                                         уроков</a>
                                 </li>
-                                <li class="nav__list-item"><a href="" class="nav__item-link">Контакты</a></li>
+                                <li class="nav__list-item"><a href="" class="nav__item-link hidden">Контакты</a></li>
                             </ul>
+                            <div class="mobile-menu">
+                                <i class='bx bx-menu'></i>
+                            </div>
                         </nav>
+
                     </div>
 
                 </header>
                 <div class="main__content">
                     <div class="main__content-img">
-                        <img src="img/person/christopher-columbus.png" alt="" class="main__content-img-pic">
+                        <img src="/img/person/christopher-columbus.png" alt="" class="main__content-img-pic">
                     </div>
                     <div class="main__content-desc">Ты никогда не пересечешь океан, если не наберешься смелости потерять из виду берег. </div>
                 </div>
