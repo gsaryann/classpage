@@ -207,11 +207,11 @@ ul {
 }
 
 
-/* Контейнер с маркерами  */
+/* Контейнер с маркерами */
 
 .owl-dots {
     text-align: center;
-    margin: 100px 0 100px;
+    margin-top: 50px;
 }
 
 .owl-carousel button.owl-dot {
