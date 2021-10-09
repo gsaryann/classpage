@@ -33,7 +33,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
+    margin-top: 10px;
 }
 
 .header__right {
@@ -109,14 +110,8 @@ ul {
     width: 100%;
 }
 
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-}
-
 .main {
+    position: relative;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -125,34 +120,14 @@ ul {
 
 .main__content {
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
     left: 50%;
 }
 
-.main__content-img-pic {
-    min-width: 60vh;
-    padding: 10px;
-}
-
 .main__content-desc {
-    font-size: 2.4em;
+    font-size: 1.4em;
     font-weight: bold;
-}
-
-@property --deg {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
-
-@keyframes mainanim {
-    0% {
-        --deg: 0deg;
-    }
-    100% {
-        --deg: 360deg;
-    }
 }
 
 .mobile-menu {
@@ -163,7 +138,69 @@ ul {
     display: flex;
 }
 
+.owl-carousel .owl-item img {
+    width: 50% !important;
+}
+
+.carousel-item {
+    background: #FFCC00;
+    font-size: 23px;
+    padding: 100px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: grab;
+    position: relative;
+    height: 230px;
+    overflow-wrap: break-word;
+}
+
+.owl-item:nth-child(odd) .carousel-item {
+    background: #f3c100;
+}
+
+
+/* Контейнер с маркерами */
+
+.owl-dots {
+    text-align: center;
+}
+
+.owl-carousel button.owl-dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white !important;
+    margin: 0 3px;
+}
+
+.owl-carousel button.owl-dot.active {
+    background: rgb(170, 158, 136) !important;
+}
+
+.main__content-block {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    cursor: grab;
+    margin: 0 auto;
+}
+
+.main__content-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.main__content-desc {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
 @media (max-width: 768px) {
+    .main__content-block {
+        width: 70vh;
+    }
     .mobile-menu {
         display: flex;
         font-size: 3em;
@@ -188,47 +225,27 @@ ul {
         flex-direction: column;
         align-items: baseline;
     }
+    .owl-carousel .owl-item img {
+        width: 100% !important;
+    }
 }
 
-.carousel-item {
-    background: #FFCC00;
-    font-size: 23px;
-    padding: 100px 20px;
-    text-align: center;
-    box-sizing: border-box;
-    cursor: grab;
-    position: relative;
-    height: 230px;
-    overflow-wrap: break-word;
-}
-
-.owl-item:nth-child(odd) .carousel-item {
-    background: #f3c100;
-}
-
-
-/* Контейнер с маркерами */
-
-.owl-dots {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.owl-carousel button.owl-dot {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: blue !important;
-    margin: 0 3px;
-}
-
-.owl-carousel button.owl-dot.active {
-    background: orange !important;
-}
-
-.main__content-block {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    cursor: grab;
+@media (max-width: 480px) {
+    .main__content-block {
+        flex-direction: column;
+        width: 100%;
+    }
+    .main__content-img {
+        width: 70%;
+    }
+    .nav__list-item {
+        margin: 0;
+    }
+    .main__content-desc {
+        font-size: 1em;
+        width: 75%;
+    }
+    .logo__desc {
+        font-size: 2em
+    }
 }
