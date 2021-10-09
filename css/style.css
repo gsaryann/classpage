@@ -67,6 +67,7 @@ ul {
 
 .nav__list {
     display: flex;
+    align-items: center;
 }
 
 .nav__list-item {
@@ -120,31 +121,23 @@ ul {
     display: flex;
     justify-content: center;
     background: url(../img/bg/geographic-map.jpg) center/cover no-repeat;
-    /* background-blend-mode: screen; */
-    /* background: linear-gradient(limegreen, transparent), linear-gradient(90deg, skyblue, transparent), linear-gradient(-90deg, coral, transparent); */
 }
 
 .main__content {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     left: 50%;
 }
 
-.main__content-img {
-    height: 60vh;
-}
-
 .main__content-img-pic {
-    height: 100%;
+    min-width: 60vh;
+    padding: 10px;
 }
 
 .main__content-desc {
-    font-size: 1.4em;
+    font-size: 2.4em;
+    font-weight: bold;
 }
 
 @property --deg {
@@ -187,7 +180,6 @@ ul {
     }
     .main__content-desc {
         font-size: 1.2em;
-        font-weight: bold;
     }
     .main__content-img {
         height: 40vh;
@@ -196,4 +188,47 @@ ul {
         flex-direction: column;
         align-items: baseline;
     }
+}
+
+.carousel-item {
+    background: #FFCC00;
+    font-size: 23px;
+    padding: 100px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: grab;
+    position: relative;
+    height: 230px;
+    overflow-wrap: break-word;
+}
+
+.owl-item:nth-child(odd) .carousel-item {
+    background: #f3c100;
+}
+
+
+/* Контейнер с маркерами */
+
+.owl-dots {
+    text-align: center;
+    margin: 100px 0 100px;
+}
+
+.owl-carousel button.owl-dot {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: blue !important;
+    margin: 0 3px;
+}
+
+.owl-carousel button.owl-dot.active {
+    background: orange !important;
+}
+
+.main__content-block {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    cursor: grab;
 }
