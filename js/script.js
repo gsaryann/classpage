@@ -7,3 +7,10 @@ $('#owl-carousel').owlCarousel({
     nav: false,
     dots: true,
 });
+
+$("#menu").click(function() {
+    $(".mobile-menu").toggleClass('active')
+    $(".header__mobile-line").each(function() {
+        $(this).toggleClass('active')
+    })
+})
