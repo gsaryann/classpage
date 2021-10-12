@@ -92,6 +92,7 @@ ul {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    padding: 0;
 }
 
 .mobile__list-item {
@@ -181,7 +182,6 @@ ul {
 
 .mobile-menu {
     display: none;
-    padding: 0;
 }
 
 .mobile-menu.active {
