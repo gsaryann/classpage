@@ -75,7 +75,8 @@ ul {
     margin: 5px;
 }
 
-.nav__item-link {
+.nav__item-link,
+.mobile__item-link {
     position: relative;
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -86,6 +87,19 @@ ul {
     white-space: nowrap;
 }
 
+.mobile__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mobile__list-item {
+    margin-bottom: 5px;
+}
+
+.mobile__item-link:hover,
+.mobile__item-link.active,
 .nav__item-link:hover,
 .nav__item-link.active {
     background-color: #fff;
@@ -108,6 +122,41 @@ ul {
 
 .nav__item-link:hover:before {
     width: 100%;
+}
+
+.header__mobile-line {
+    background-color: aliceblue;
+    width: 50px;
+    height: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.header__mobile {
+    margin-left: 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.header__mobile-line.active:first-child {
+    opacity: 1;
+    display: block;
+    transform: rotate( -45deg) translate(-9px, 6px);
+}
+
+.header__mobile-line.active {
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.header__mobile-line.active:last-child {
+    opacity: 1;
+    display: block;
+    transform: rotate( 45deg) translate(-16px, -11px);
 }
 
 .main {
@@ -134,28 +183,27 @@ ul {
     display: none;
 }
 
+.mobile-menu.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100vh;
+    background-color: #ff9800f5;
+    ;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
 .hidden {
     display: flex;
 }
 
 .owl-carousel .owl-item img {
     width: 50% !important;
-}
-
-.carousel-item {
-    background: #FFCC00;
-    font-size: 23px;
-    padding: 100px 20px;
-    text-align: center;
-    box-sizing: border-box;
-    cursor: grab;
-    position: relative;
-    height: 230px;
-    overflow-wrap: break-word;
-}
-
-.owl-item:nth-child(odd) .carousel-item {
-    background: #f3c100;
 }
 
 
@@ -201,11 +249,6 @@ ul {
     .main__content-block {
         width: 70vh;
     }
-    .mobile-menu {
-        display: flex;
-        font-size: 3em;
-        color: white;
-    }
     .hidden {
         display: none;
     }
@@ -218,15 +261,15 @@ ul {
     .main__content-desc {
         font-size: 1.2em;
     }
-    .main__content-img-pic {
-        min-height: 40vh;
-    }
     .main__content {
         flex-direction: column;
         align-items: baseline;
     }
     .owl-carousel .owl-item img {
         width: 100% !important;
+    }
+    .header__mobile {
+        display: flex;
     }
 }
 
