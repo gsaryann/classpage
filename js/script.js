@@ -52,5 +52,6 @@ function scheduleForDay() {
     }
 }
 window.onload = function() {
+
     scheduleForDay();
 }
