@@ -52,6 +52,6 @@ function scheduleForDay() {
     }
 }
 window.onload = function() {
-
+    console.log(1)
     scheduleForDay();
 }
