@@ -18,6 +18,8 @@ body::-webkit-scrollbar-thumb {
 
 html,
 body {
+    padding: 0;
+    margin: 0;
     scroll-behavior: smooth;
     width: 100%;
     height: 100%;
@@ -246,7 +248,41 @@ ul {
     margin: 0 auto;
 }
 
+.table {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100vh;
+}
+
+.table__info {
+    display: none;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.table__item {
+    display: none;
+    justify-content: center;
+    font-size: 2em;
+    text-align: center;
+}
+
+.table__desc {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em;
+}
+
+.table__item th {
+    width: 50%;
+}
+
 @media (max-width: 768px) {
+    .nav__list-item {
+        margin: 0;
+    }
     .main__content-block {
         width: 70vh;
     }
@@ -272,6 +308,12 @@ ul {
     .header__mobile {
         display: flex;
     }
+    .table__item {
+        font-size: 1.5em;
+    }
+    .table__desc {
+        font-size: 1.6em
+    }
 }
 
 @media (max-width: 480px) {
@@ -282,14 +324,8 @@ ul {
     .main__content-img {
         width: 70%;
     }
-    .nav__list-item {
-        margin: 0;
-    }
     .main__content-desc {
         font-size: 1em;
         width: 75%;
-    }
-    .logo__desc {
-        font-size: 2em
     }
 }
