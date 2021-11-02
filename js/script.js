@@ -80,9 +80,7 @@ function scheduleForDay() {
     let d = (nowDate.toLocaleString('ru', {
         weekday: 'short'
     }));
-    let table = document.createElement('table');
-    secTable.appendChild(table);
-    table.classList.toggle('table__content')
+    let table = document.querySelector('.table__content')
 
     for (let key in schedule[d]) {
         let tr = document.createElement('tr');
@@ -95,6 +93,29 @@ function scheduleForDay() {
         td.innerHTML = key;
         td2.innerHTML = schedule[d][key]
     }
+}
+
+let btn = document.querySelector('#btn')
+
+function send() {
+    let name = document.querySelector('#name');
+    let email = document.querySelector('#email');
+    let text = document.querySelector('#text');
+    let msg = '<pre> Name:' + name.value + '</pre>' + ' <pre> Email:' + email.value + '</pre>' + ' <pre> Message:' + text.value + '</pre>'
+    $.ajax({
+        type: 'POST',
+        url: 'http://pushmebot.ru/send',
+        data: {
+            'key': '49cd486d2402a8eab9433bda18625eb8',
+            'message': msg,
+
+        }
+    })
+    alert('Отправлено!');
+    name.value = '';
+    email.value = '';
+    text.value = '';
+
 }
 window.onload = function() {
     scheduleForDay();

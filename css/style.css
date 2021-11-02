@@ -81,12 +81,16 @@ ul {
 .mobile__item-link {
     position: relative;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 500;
     text-decoration: none;
     width: 100%;
     border-radius: 20px;
     white-space: nowrap;
+}
+
+.mobile__item-link {
+    font-size: 1.5em;
 }
 
 .mobile__list {
@@ -164,7 +168,6 @@ ul {
 
 .main {
     overflow: auto;
-    position: relative;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -254,7 +257,7 @@ ul {
     top: 50%;
     transform: translate(-50%, -50%);
     left: 50%;
-    width: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -266,6 +269,8 @@ ul {
 }
 
 .table__item {
+    display: flex;
+    justify-content: center;
     font-size: 1.8em;
     text-align: center;
 }
@@ -278,14 +283,50 @@ ul {
     width: 50vh;
 }
 
-.table__desc {
+.main__news {
     display: flex;
     justify-content: center;
-    font-size: 1.8em;
+    padding-bottom: 100px;
 }
 
-.table__item th {
+.contacts {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts__desc {
+    width: 100vh;
+}
+
+.main.active {
+    display: block;
+}
+
+.main__support {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.main__support form {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.main__desc {
     width: 50%;
+    text-align: center;
+    margin: 50px auto 25px auto;
+    font-size: 1.4em;
+    font-weight: bold
 }
 
 @media (max-width: 768px) {
@@ -323,6 +364,13 @@ ul {
     .table__desc {
         font-size: 1.6em
     }
+    .main__support {
+        width: 60%;
+    }
+    .main__desc {
+        font-size: 1.2em;
+        width: 75%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -336,5 +384,8 @@ ul {
     .main__content-desc {
         font-size: 1em;
         width: 75%;
+    }
+    .main__support {
+        width: 70%;
     }
 }
