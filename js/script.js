@@ -101,20 +101,15 @@ function send() {
     let name = document.querySelector('#name');
     let email = document.querySelector('#email');
     let text = document.querySelector('#text');
-    let msg = '<pre> Name:' + name.value + '</pre>' + ' <pre> Email:' + email.value + '</pre>' + ' <pre> Message:' + text.value + '</pre>'
     $.ajax({
         type: 'POST',
-        url: 'https://pushmebot.ru/send/',
-        data: {
-            'key': '49cd486d2402a8eab9433bda18625eb8',
-            'message': msg,
-
-        }
+        url: 'https://api.telegram.org/bot' + '2060709342:AAHaSMLWSYcnp3iYFsgEyngiYKOMSP8yrWw' + '/sendMessage?chat_id=' + '@tendsoceco' + '&text=' + 'Name: ' + name.value + ' Email: ' + email.value + ' Message: ' + text.value,
     })
-    alert('Отправлено!');
+
     name.value = '';
     email.value = '';
     text.value = '';
+    alert('Отправлено!');
 
 }
 window.onload = function() {
