@@ -104,7 +104,7 @@ function send() {
     let msg = '<pre> Name:' + name.value + '</pre>' + ' <pre> Email:' + email.value + '</pre>' + ' <pre> Message:' + text.value + '</pre>'
     $.ajax({
         type: 'POST',
-        url: 'http://pushmebot.ru/send',
+        url: 'https://pushmebot.ru/send',
         data: {
             'key': '49cd486d2402a8eab9433bda18625eb8',
             'message': msg,
