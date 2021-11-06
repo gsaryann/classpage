@@ -103,7 +103,7 @@ function send() {
     let text = document.querySelector('#text');
     $.ajax({
         type: 'POST',
-        url: 'https://api.telegram.org/bot' + '2060709342:AAHaSMLWSYcnp3iYFsgEyngiYKOMSP8yrWw' + '/sendMessage?chat_id=' + '@tendsoceco' + '&text=' + 'Name: ' + name.value + ' Email: ' + email.value + ' Message: ' + text.value,
+        url: 'https://api.telegram.org/bot' + '2104091339:AAFWSSt46szvsy4BQbSpKcBYPhVp5cpxhEs' + '/sendMessage?chat_id=' + '-1001583412737' + '&text=' + 'Name: ' + name.value + ' Email: ' + email.value + ' Message: ' + text.value,
     })
 
     name.value = '';
