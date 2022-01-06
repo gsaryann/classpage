@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="main active">
+            <div class="container">
+                <header class="header">
+                    <div class="header__right">
+                        <div class="logo">
+                            <a class="logo__desc" href="./">10Д</a>
+                        </div>
+                    </div>
+                    <div class="header__left">
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__list-item">
+                                    <a href="./" class="nav__item-link hidden">Главная</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a href="./news.html" class="nav__item-link hidden">Новости</a>
+                                </li>
+
+                                <li class="nav__list-item">
+                                    <a href="./schedule.html" class="nav__item-link hidden">Расписание уроков</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a href="./contacts.html" class="nav__item-link active hidden">Контакты</a>
+                                </li>
+                            </ul>
+                            <div class="header__mobile" id="menu">
+                                <div class="header__mobile-line"></div>
+                                <div class="header__mobile-line"></div>
+                                <div class="header__mobile-line"></div>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
+
+                <div class="mobile-menu">
+                    <div class="mobile-menu-content">
+                        <ul class="mobile__list">
+                            <li class="mobile__list-item">
+                                <a href="./" class="mobile__item-link">Главная</a>
+                            </li>
+                            <li class="mobile__list-item">
+                                <a href="./news.html" class="mobile__item-link">Новости</a>
+                            </li>
+
+                            <li class="mobile__list-item">
+                                <a href="./schedule.html" class="mobile__item-link">Расписание уроков</a>
+                            </li>
+                            <li class="mobile__list-item">
+                                <a href="./contacts.html" class="mobile__item-link active">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main__desc">
+                    Возникли вопросы? Тогда напишите нам сообщение во
+                    <a href="https://vk.me/10dsoceconom">Вконтакте</a> или заполните форму ниже.
+                </div>
+                <div class="main__support">
+                    <form id='supportForm'>
+                        <input id='name' type="text" placeholder="Иван">
+                        <input id='email' type="email" name="" id="" placeholder="ivanivanov@mail.ru">
+                        <textarea id='text' name="" id="" cols="40" rows="10"></textarea>
+                    </form>
+                    <button id="btn" onclick="send()">send</button>
+                </div>
+            </div>
+<video id="player" controls="" autoplay=""><source src="https://p58s.bazonserver.site/manifest/22543/2160.mp4/index.m3u8?hash=LS7woOk6Y6nZV0JSqekrHQ&amp;expires=1641500042&amp;id=22543&amp;name=2160.mp4" type="application/x-mpegurl"><source src="https://p58s.bazonserver.site/manifest/22543/2160.mp4/index.m3u8?hash=LS7woOk6Y6nZV0JSqekrHQ&amp;expires=1641500042&amp;id=22543&amp;name=2160.mp4" type="video/mp4"></video>
+        </section>
+
+        <!-- VK Widget -->
+        <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+        <div id="vk_community_messages"></div>
+        <script type="text/javascript">
+            VK.Widgets.CommunityMessages("vk_community_messages", 208240328, {
+                expandTimeout: "120000",
+                tooltipButtonText: "Есть вопрос?",
+            });
+        </script>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
