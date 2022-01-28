@@ -281,6 +281,7 @@ ul {
 
 .table__item td {
     width: 50vh;
+    margin: auto;
 }
 
 .main__news {
